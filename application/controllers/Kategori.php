@@ -36,7 +36,7 @@ class Kategori extends CI_Controller {
 	}
 
 	public function contact(){
-		$this->template->display('content/contact');
+		$this->template->display('content/contact', $data);
 	}
 
 	public function galeri(){

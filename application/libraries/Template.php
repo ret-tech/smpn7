@@ -6,8 +6,8 @@ class Template{
 		$this->_ci = &get_instance();
 	}
 
-	function display($templates, $data = null){
-		$data['content']		= $this->_ci->load->view($templates, $data, true);
+	function display($template, $data = null){
+		$data['content']		= $this->_ci->load->view($template, $data, true);
 		$data['navheader']			= $this->_ci->load->view('templates/navheader', $data, true);
 		$data['footer']			= $this->_ci->load->view('templates/footer', $data, true);
 
